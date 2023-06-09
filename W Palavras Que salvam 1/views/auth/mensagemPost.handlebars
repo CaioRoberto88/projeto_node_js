@@ -1,0 +1,34 @@
+<h1 class="text-center my-3">Poste sua reflexão</h1>
+<form action="/mensagemPost" method="post">
+  <div class="row d-block m-auto g-md-3 g-0">
+    <div class="col-8 centralizar">
+      <label class="form-label" for="titulo">Título</label>
+      <input
+        class="form-control shadow-none"
+        type="text"
+        name="titulo"
+        id="titulo"
+        placeholder="Insira um titulo"
+        required
+      />
+    </div>
+    <div class="col-8 centralizar">
+      <label class="form-label" for="mensagem">Mensagem</label>
+      <textarea
+        class="form-control shadow-none"
+        name="mensagem"
+        id="mensagem"
+        placeholder="Insira uma mensagem"
+        required
+      ></textarea>
+    </div>
+    <div class="col-8 centralizar">
+      <input class="btn btn-geral my-3" type="submit" value="Postar" />
+
+     <p>
+      <a class="link-geral" href="/painelDeUsuario">Voltar para Painel de usuário</a>
+    </p>
+    </div>
+
+  </div>
+</form>

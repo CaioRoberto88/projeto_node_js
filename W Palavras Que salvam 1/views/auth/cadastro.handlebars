@@ -1,0 +1,74 @@
+<form action="/cadastro" method="post">
+  <h1 class="text-center my-3">Faça seu cadastro</h1>
+  <div class="row m-auto g-md-3 g-0">
+    <div class="col-md-6 col-12">
+      <label class="form-label" for="usuario">Usuário</label>
+      <input
+        class="form-control shadow-none"
+        type="text"
+        name="usuario"
+        id="usuario"
+        placeholder="Insire um nome de usuário"
+        required
+      />
+    </div>
+    <div class="col-md-6 col-12">
+      <label class="form-label" for="nome">Nome:</label>
+      <input
+        class="form-control shadow-none"
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Insire seu nome completo"
+      />
+    </div>
+    <div class="col-md-6 col-12">
+      <label class="form-label" for="senha">Senha:</label>
+      <input
+        class="form-control shadow-none"
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Insire uma senha"
+      />
+    </div>
+    <div class="col-md-6 col-12">
+      <label class="form-label" for="confSenha">Confirma senha:</label>
+      <input
+        class="form-control shadow-none"
+        type="password"
+        name="confSenha"
+        id="confSenha"
+        placeholder="Confirma sua senha"
+      />
+    </div>
+    <div class="col-md-6 col-12">
+      <label class="form-label" for="email">E-mail:</label>
+      <input
+        class="form-control shadow-none"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Insira um e-mail"
+      />
+    </div>
+    <div class="col-md-6 col-12">
+      <label class="form-label" for="confEmail">Confirma e-mail:</label>
+      <input
+        class="form-control shadow-none"
+        type="email"
+        name="confEmail"
+        id="confEmail"
+        placeholder="Confirma seu e-mail"
+      />
+    </div>
+    <div>
+      <input class="btn btn-geral my-3" type="submit" value="Cadastrar" />
+    </div>
+  </div>
+  <div>
+    <p>
+      <a class="link-geral" href="/login">Já possui conta? clique aqui!</a>
+    </p>
+  </div>
+</form>

@@ -1,0 +1,54 @@
+<h1 class="text-center my-3">Painel de Usuário</h1>
+<div class="row h-auto">
+  <div class="col-md-12">
+    <h2 class="text-center py-5">Minhas reflexões</h2>
+    <table class="table">
+      <thead>
+        <th>Título</th>
+        <th>Detalhes</th>
+        <th>Editar</th>
+        <th>Remover</th>
+      </thead>
+      <tbody>
+
+        {{#each mensagems}}
+          <tr>
+            <th>{{this.titulo}}</th>
+            {{!-- <td><a class="link-geral" href="/mensagemDetalhes/{{this.id}}">Detalhes</a></td> --}}
+            <td><a href="/mensagemDetalhes/{{this.id}}">Detalhes</a></td>
+            <th>
+              <a href="/mensagemEdit/{{this.id}}">
+                <i class="bi bi-pencil-square"></i>
+              </a>
+            </th>
+            <th>
+              <form
+                class="m-0 p-0"
+                action="/painelDeUsuario/remover"
+                method="post"
+              >
+                <input type="hidden" name="id" value="{{this.id}}" />
+                <input
+                  class="btn btn-remover m-0 p-0"
+                  value="X"
+                  type="submit"
+                />
+              </form>
+            </th>
+          </tr>
+        {{/each}}
+
+      </tbody>
+    </table>
+    {{#if semMensagem}}
+      <p>
+        Você não possui mensagens no sistema, começe enviando agora,
+        <a class="link-geral" href="/mensagemPost">clique aqui!</a>
+      </p>
+    {{/if}}
+
+  </div>
+  <div class="col-md-12 my-5">
+    <a class="btn btn-geral my-3" href="/mensagemPost">Criar mensagem</a>
+  </div>
+</div>

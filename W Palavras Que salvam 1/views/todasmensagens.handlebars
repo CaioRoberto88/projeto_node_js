@@ -1,0 +1,49 @@
+<h1 class="text-center my-5 titulo-principal">Mensagens de Reflexão Diária</h1>
+    
+<form class="col-md-6 col-12 centralizar" action="/" method="get">
+  <div class="input-group">
+     <input class="btn btn-geral" type="submit" value="Buscar">
+     <input class="form-control shadow-none" type="text" name="buscar" placeholder="Busca por algo?" required>
+  </div>
+  {{#if buscar}}
+
+      <h2 class="text-center my-3">Buscando por : <span>{{this.buscar}}</span></h2>
+
+      {{#if mensagensQtd}}
+        <p class="text-center my-3">Foram achadas {{mensagensQtd}} mensagem.</p>
+      {{else}}
+        <p class="text-center my-3">Não foram achadas nenhuma mensagem contendo: {{this.buscar}}</p>
+      {{/if}}
+
+  {{else}}
+      <h2 class="text-center my-3">Todas as mensagens</h2>
+  {{/if}}
+</form>
+<div class="row">
+  <div class="col-6">
+   <span class="fw-bold">Ordenar por:</span>
+  </div>
+  <div class="col-6 d-flex ms-1 my-3">
+     <form class="me-1" action="/" method="get">
+      <input type="hidden" name="buscar" value="{{this.buscar}}"> 
+      <input type="hidden" name="order" value="maisNovo">
+      <button class="btn btn-geral" type="submit"><i class="bi bi-arrow-up"></i></button>
+    </form>
+    <form action="/" method="get">
+      <input type="hidden" name="buscar" value="{{this.buscar}}"> 
+      <input type="hidden" name="order" value="maisAntigo">
+      <button class="btn btn-geral" type="submit"><i class="bi bi-arrow-down"></i></button>
+    </form>
+     <a class="link-geral ms-3" href="/"> Limpar busca</a>
+  </div>
+</div>
+<div class="row">
+  {{#each mensagems}}
+    <div class="col-md-12 my-3 todas-mensagens shadow shadow-sm">
+      <h5 class="todas-mensagens-titulo">{{this.titulo}}</h2>
+      <p class="lead">{{this.mensagem}}</p>
+       <span class="todas-mensagens-postadoPor">Postado por <small class="todas-mensagens-usuario">{{this.Usuario.usuario}}</small></span>
+    </div>
+  {{/each}}
+
+</div>

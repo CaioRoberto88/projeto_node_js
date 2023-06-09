@@ -1,0 +1,39 @@
+<form class="h-75" action="/login" method="post">
+  <h1 class="text-center my-3">Faça seu login</h1>
+  <div class="row g-md-3 g-0">
+    <div class="col-8 centralizar">
+      <label class="form-label" for="email">E-mail:</label>
+      <input
+        class="form-control shadow-none"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+    </div>
+    <div class="col-8 centralizar">
+      <label class="form-label" for="senha">Senha:</label>
+      <input
+        class="form-control shadow-none"
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Digite sua senha"
+        required
+      />
+      <small><a class="link-geral" href="#">Esqueceu sua senha?</a></small>
+    </div>
+    <div class="col-8 centralizar">
+      <input class="btn btn-geral my-3" type="submit" value="Login" />
+
+      <p>
+        <a class="link-geral" href="/cadastro">Não tem cadastro? clique aqui!</a>
+      </p>
+    </div>
+
+    <div>
+
+    </div>
+  </div>
+</form>

@@ -1,0 +1,179 @@
+/* GERAL */
+a {
+  text-decoration: none;
+}
+
+.conteudo-principal {
+  height: auto;
+  background-color: #f0f0f2;
+}
+
+li a {
+  list-style: none;
+}
+
+
+/* NAVBAR */
+.navbar-brand {
+  background-image: url("../img/logo.svg");
+  height: 50px;
+  width: 250px;
+  background-repeat: no-repeat;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 60px;
+  padding-right: 5px;
+}
+
+.navbar {
+  background-color: #d9a362;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: #d96aa7;
+}
+
+
+/* FLASH MESSAGE */
+.feedback-messages {
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  position: relative;
+  bottom: 120px;
+  width: 35%;
+}
+
+/* PAINEL DE USUARIO */
+
+.table th,
+td {
+  vertical-align: middle;
+}
+
+.bi-pencil-square,
+.btn-remover {
+  font-size: 18px;
+}
+
+.btn-remover {
+  color: red;
+}
+
+/* LOGIN */
+.form-control:focus {
+  border: 1px solid #d96aa7;
+}
+
+.btn-geral {
+  color: #fff;
+  background-color: #d96aa7;
+  transition: 0.3s;
+}
+
+.btn-geral:hover {
+  color: #d96aa7;
+  border: 1px solid #d96aa7;
+}
+
+.link-geral {
+  color: #d96aa7;
+}
+
+/* TODAS MENSAGENS */
+.titulo-principal,
+h1,
+h2,
+label,
+th {
+  color: #600001;
+}
+
+.todas-mensagens {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #d96aa7;
+}
+.lead {
+  color: #fff;
+}
+
+.todas-mensagens-titulo {
+  color: #fefefe;
+}
+
+.todas-mensagens-postadoPor {
+  color: #fff;
+}
+
+.todas-mensagens-usuario {
+  color: #600001;
+}
+
+footer {
+  color: #fff;
+  background-color: #d9a796;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.bi-instagram,.bi-titok,.bi-twitter {
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+.bi-facebook {
+  color: #4267B2;
+} 
+.bi-instagram {
+ color: #833AB4;
+}
+.bi-tiktok {
+color: #000;
+}
+.bi-twitter  {
+  color: #1DA1F2;
+}
+
+
+
+/* CLASSES HELPERS */
+.centralizar {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
+/* CORES DO PROJETO */
+
+/* Color Theme Swatches in Hex */
+.Padroeira-Nossa-Senhora-de-Fátima-1-hex { color: #D96AA7; }
+.Padroeira-Nossa-Senhora-de-Fátima-2-hex { color: #F0F0F2; }
+.Padroeira-Nossa-Senhora-de-Fátima-3-hex { color: #D9A362; }
+.Padroeira-Nossa-Senhora-de-Fátima-4-hex { color: #D9A273; }
+.Padroeira-Nossa-Senhora-de-Fátima-5-hex { color: #D9A796; }
+
+/* Color Theme Swatches in RGBA */
+.Padroeira-Nossa-Senhora-de-Fátima-1-rgba { color: rgba(216, 106, 167, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-2-rgba { color: rgba(239, 240, 242, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-3-rgba { color: rgba(216, 163, 97, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-4-rgba { color: rgba(216, 162, 114, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-5-rgba { color: rgba(216, 167, 149, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Padroeira-Nossa-Senhora-de-Fátima-1-hsla { color: hsla(326, 59, 63, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-2-hsla { color: hsla(224, 8, 94, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-3-hsla { color: hsla(33, 60, 61, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-4-hsla { color: hsla(28, 57, 65, 1); }
+.Padroeira-Nossa-Senhora-de-Fátima-5-hsla { color: hsla(16, 46, 71, 1); }
